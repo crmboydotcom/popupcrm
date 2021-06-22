@@ -1,0 +1,151 @@
+.loginbtn {
+            background: #11a0ff;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 2px;
+            font-size: 12px;
+            text-transform: uppercase;
+            transition: ease 0.6s all 0s;
+            border: none;
+            font-family: Arial;
+            letter-spacing: 1px;
+            display: block;
+            width: 130px;
+            text-align: center;
+            margin: auto;
+        }
+        .loginbtn:hover {
+            background: #181818;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .login-box {
+            margin: 70px auto;
+            padding: 0;
+            background: #fff;
+            border-radius: 0;
+            width: 350px;
+            position: relative;
+            transition: all 1s ease-in-out;
+        }
+
+        .login-box .close {
+            position: absolute;
+            top: -11px;
+            right: -11px;
+            transition: all 200ms;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background: #ff4e4e;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            border-radius: 100px;
+        }
+        .login-box .close:hover {
+            color: #ffffff;
+            background: #333;
+        }
+        .login-box .lcontents {
+            max-height: 30%;
+            overflow: auto;
+            padding: 7%;
+            font-family: Arial;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+        .login-box .lcontents h3{
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+        .login-box .lcontents ul{
+            list-style: none;
+            padding: 15px 0;
+            border-top: 1px dashed #cacaca;
+            border-bottom: 1px dashed #cacaca;
+            
+        }
+        .login-box .lcontents ul li{
+            list-style: none;
+            display: inline-block;
+            width: 44%;
+            text-align: center;
+            background: #e8f4ff;
+            color: #0486ff;
+            border: 1px dashed #0486ff; 
+            padding: 6px;
+            transition: ease-in-out 0.7s all 0s;
+        }
+        .login-box .lcontents ul li:hover{
+            background: #0486ff;
+            color: #fff;
+        }
+        .login-box .lcontents ul li i{
+            display: block;
+            font-size: 25px;
+            margin: 5px;
+        }
+        .login-box .lcontents ul li h4{
+            margin: 0;
+            font-size: 12px;
+        }
+        .login-box .lcontents .subsbtn{
+            list-style: none;
+            display: inline-block;
+            width: 90%;
+            font-size: 14px;
+            text-align: center;
+            background: #e8f4ff;
+            color: #0486ff;
+            border: 1px dashed #0486ff; 
+            text-decoration: none;
+            padding: 12px;
+            transition: ease-in-out 0.7s all 0s;
+        }
+        .login-box .lcontents .subsbtn:hover{
+            background: #0486ff;
+            color: #fff;
+        }
+        @media screen and (max-width: 700px){
+            .login-box{
+                width: 95%;
+            }
+            .login-box .lcontents h3{
+                font-size: 14px;
+            }
+            .login-box .lcontents ul li{
+                width:43%;
+            }
+            .login-box .lcontents ul li i{
+                font-size: 20px;
+            }
+            .login-box .lcontents ul li h4{
+                font-size: 11px;
+            }
+            .login-box .lcontents .subsbtn{
+                font-size: 12px;
+            }
+        }
